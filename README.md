@@ -14,7 +14,7 @@ Este proyecto es un demo para gestionar Actividades y sus tareas con dos tipos d
     ├[DIR]util ==> Contiene directorios y carpetas que estan relacionado con el acceso a los datos.
      
      ├[DIR]entidades ==> Contiene interfaces q se utilizan para manejar datos GENERALES provenientes del servidor. Ver tambien el Directorio APP/ACCESO-DATOS/MODELS.
-      ├activo-campos ==> Interfaz q se utiliza al crear o editar un activo. Contiene datos q se carga del servidor para poder asignarselos al valor de algun campo del ACTIVO. Esto generalmente se utilizan en campos << SELECT >>.
+      ├actividad-campos ==> Interfaz q se utiliza al crear o editar un actividad. Contiene datos q se carga del servidor para poder asignarselos al valor de algun campo de lA ACTIVIDAD. Esto generalmente se utilizan en campos << SELECT >>.
       ├errorr ==> Interfaz q representa los error provenientes del servidor y/o errores internos de la app.
       ├item-data ==> Interfaz q representa el manejo de datos INTERNOS DE LA APP. La app convierte los datos provenientes de el Backend a esta interfaz. Es como una CAPA intermedia entre Backend y el Frontend. IMPORTANTE ESTA INTERFAZ.
       ├usuario-auth ==> Contiene todos los datos del usuario autenticado.
@@ -22,14 +22,10 @@ Este proyecto es un demo para gestionar Actividades y sus tareas con dos tipos d
     ├codigo-app ==> Codigos manejados internamente por la app.    
     ├url ==> Contiene todas la url de la app.
  
- ├[DIR]activos ==> Modulo que representa el trabajo con un activo. El directorio activos/activo contiene componentes los cuales son un EJEMPLO (CRUD) del trabajo con Modelo de datos(tablas en bd) q depende de otros modelos de datos(otras tabla en la bd). Relacion en la bd 1-m.
+ ├[DIR]actividades ==> Modulo que representa el trabajo con una ACTIVIDAD. El directorio actividades/actividad contiene componentes los cuales son un EJEMPLO (CRUD) del trabajo con Modelo de datos(tablas en bd) q depende de otros modelos de datos(otras tabla en la bd). Relacion en la bd 1-m.
 
- ├[DIR]comprobar ==> componente q uso para verificar algo. uso personal mio. 
- ├[DIR]configuracion ==> Modulo que representa el trabajo con categoria y responsable. 
+ ├[DIR]trabajador ==> Modulo que representa el trabajo con trabajadores. Solo tiene un componente(Dialog) para seleccionar el trabajador q se le asigna a la actividad.
   
-  ├[DIR]categoria ==> Contiene componentes los cuales son un EJEMPlO (CRUD) del trabajo con Modelo de datos(tabla en bd) q NOOO tiene relacion con otras tablas de la bd.  
-  ├[DIR]resposable ==> Contiene un unico componente q es un dialog para utilizarlo al seleccionar el RESPONSABLE en un ACTIVO al darle de alta.
- 
  ├[DIR]seguridad ==> Modulo qontiene varios componentes utilizados para el proceso de
  registrar, cambiar-clave, login y logout en la app. 
  ├[DIR]template ==> Modulo q contiene varios componentes utilizados en la app.  
