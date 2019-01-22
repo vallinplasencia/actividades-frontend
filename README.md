@@ -1,5 +1,5 @@
-# ExamenFE
-Este proyecto es un proyecto de partida para crear un proyecto mas compleje. Este proyecto ya tiene creado una estructura de directorios basica como la capa de acceso a datos,  que permite  recibir datos a traves de desde una Api RestFull.
+# ActividadesFrontend
+Este proyecto es un demo para gestionar Actividades y sus tareas con dos tipos de usuario(Admin, Usuario) que permite  recibir datos a través de una Api RestFull.
 
 ## Detalles de la estructura del proyecto. IMPORTANTE.
 <pre style="font-size: 16px;">
@@ -75,10 +75,10 @@ Este proyecto es un proyecto de partida para crear un proyecto mas compleje. Est
 ### Clonado el repo
 ``` bash
 # clonando el repositorio
-$ git clone https://github.com/vallinplasencia/cascaron-angular-7 cascaron-angular-7
+$ git clone https://github.com/vallinplasencia/actividades-frontend actividades-frontend
 
 # Navedando al directorio del proyecto
-$ cd cascaron-angular-7
+$ cd actividades-frontend
 
 # Instalando las dependencias del proyecto
 $ npm install
@@ -100,7 +100,7 @@ Esta aplicacion está bajo licencia [MIT license](https://opensource.org/license
 
 ## ***************** MAS DATOS INTERESANTES *****************
 
-##Examen-FE
+##ActividadesFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
