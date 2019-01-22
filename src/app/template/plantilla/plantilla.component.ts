@@ -30,7 +30,6 @@ export class PlantillaComponent implements OnInit, AfterViewInit {
     private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
-    console.log("ONINIT");
     //Registro el subbject para hacer las peticiones de las NOTIFICACIONES
     this.subscptionMisNotif = this.misNotificSubject
       .pipe(
@@ -42,7 +41,6 @@ export class PlantillaComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    console.log("afterVIEWINIT");
     //Inicio con la primera peticion para ver las notificaciones siempre q el usuario 
     //este autenticado
     if (this.auth.isAutenticado()) {
@@ -50,8 +48,7 @@ export class PlantillaComponent implements OnInit, AfterViewInit {
     }
     //Cada sierto tiempo actualizo las notificaciones por si se me asigno una nueva tarea
     setInterval(() => {
-
-      console.log('hola');
+      
       if (this.auth.isAutenticado()) {
         this.misNotificSubject.next();
       }

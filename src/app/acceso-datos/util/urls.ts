@@ -38,15 +38,6 @@ export class Urls {
 
 
 
-  public static readonly CATEGORIAS = 'api/categorias';
-  public static readonly RESPONSABLES = 'api/responsables';
-
-  public static readonly ACTIVOS = 'api/activos';
-  public static readonly ACTIVOS_CAMPOS = 'api/activos/activo-campos';
-  public static readonly ACTIVOS_Y_CAMPOS = 'api/activos/activo-y-campos';
-
-
-
   ///////////////////**************PARAMETROS DE LAS URLs********************///////////////////// 
 
   public static readonly PARAM_PAGINA = "_pagina";

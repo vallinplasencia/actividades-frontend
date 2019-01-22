@@ -1,5 +1,3 @@
-import { Categoria } from "./categoria";
-import { Responsable } from "./responsable";
 import { Trabajador } from "./trabajador";
 import { Tarea } from "./tarea";
 import { EstadosActividad } from "../util/estados-actividad.enum";

@@ -21,18 +21,9 @@
         <a mat-button [routerLink]="[{outlets:{primary: 'actividades/actividad', sidebar: ['actividad']}}]" [class.router-active]="aplicarClaseCss('actividades')">Actividades</a>
         <a mat-button [routerLink]="[{outlets:{primary: 'mis-actividades/asignadas', sidebar: ['misactividad']}}]" [class.router-active]="aplicarClaseCss('misactividades')">Mis Actividades</a>
 
-        <!-- <a mat-button [routerLink]="[{outlets:{primary: 'activos/activo', sidebar: ['activo']}}]" [class.router-active]="aplicarClaseCss('activos')">Activos</a>
-        <a mat-button [routerLink]="[{ outlets: { primary: 'configuracion/categoria', sidebar: ['configuracion'] } }]" [class.router-active]="aplicarClaseCss('configuracion')">Configuración</a>
-        <a mat-button [routerLink]="[{ outlets: { primary: 'seguridad/registrar', sidebar: ['seguridad'] } }]" [class.router-active]="aplicarClaseCss('seguridad')">Seguridad</a>
-        
-        
-        <a mat-button routerLink="./comprobar">Con acceso</a>
-        <a mat-button routerLink="comprobar">No autorizar</a> -->
+       
       </div>
       <div>
-        <!-- <button mat-icon-button (click)="loginForm()" [hidden]="isAutenticado()">
-          <mat-icon>person_outline</mat-icon>
-        </button> -->
         <button mat-flat-button color="primary" [matMenuTriggerFor]="menu_unauth" [hidden]="isAutenticado()">
           {{nombreUsuario()}}
           <mat-icon>person_outline</mat-icon>

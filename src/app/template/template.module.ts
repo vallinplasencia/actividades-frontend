@@ -7,9 +7,7 @@ import { PlantillaComponent } from './plantilla/plantilla.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
-import { SidebarConfiguracionComponent } from './sidebar/sidebar-configuracion/sidebar-configuracion.component';
 import { ErrorModeloComponent } from './error-modelo/error-modelo.component';
-import { SidebarActivosComponent } from './sidebar/sidebar-activos/sidebar-activos.component';
 import { SidebarSeguridadComponent } from './sidebar/sidebar-seguridad/sidebar-seguridad.component';
 import { SidebarActividadesComponent } from './sidebar/sidebar-actividades/sidebar-actividades.component';
 import { SidebarMisactividadesComponent } from './sidebar/sidebar-misactividades/sidebar-misactividades.component';
@@ -21,8 +19,10 @@ import { SidebarMisactividadesComponent } from './sidebar/sidebar-misactividades
     PlantillaComponent, 
     PageNotFoundComponent, 
     HomeComponent, 
-    SidebarConfiguracionComponent, 
-    ErrorModeloComponent, SidebarActivosComponent, SidebarSeguridadComponent, SidebarActividadesComponent, SidebarMisactividadesComponent,
+    ErrorModeloComponent, 
+    SidebarSeguridadComponent, 
+    SidebarActividadesComponent, 
+    SidebarMisactividadesComponent,
   ],
   imports: [
     CommonModule,

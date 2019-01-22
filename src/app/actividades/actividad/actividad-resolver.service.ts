@@ -13,12 +13,12 @@ import { take } from 'rxjs/operators';
 export class ActividadResolverService implements Resolve<ItemData<Actividad|Errorr>>{
 
   constructor(
-    private categoriaRepo: ActividadService) { }
+    private actividadRepo: ActividadService) { }
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<ItemData<Actividad|Errorr>>|Observable<never> {
       const id = route.paramMap.get('id');
   
-      return this.categoriaRepo.getActividad(id).pipe(
+      return this.actividadRepo.getActividad(id).pipe(
         take(1)
       );
     }

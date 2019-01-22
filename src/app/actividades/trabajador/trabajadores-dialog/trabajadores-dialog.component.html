@@ -13,7 +13,7 @@
     </div>
   
     <mat-form-field>
-      <input matInput placeholder="Buscar categorias" #input (keyup)="filtrar(input.value)">
+      <input matInput placeholder="Buscar trabajadores por nombre" #input (keyup)="filtrar(input.value)">
       <button *ngIf="input.value" mat-button matSuffix mat-icon-button aria-label="Borrar búsqueda" (click)="limpiarFiltro(input)">
         <mat-icon>close</mat-icon>
       </button>

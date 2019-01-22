@@ -213,7 +213,7 @@ export class ActividadEditarComponent implements OnInit {
 
 
             this.router.navigate([{ outlets: { primary: 'actividades/actividad', sidebar: ['actividad'] } }]);
-            console.log('navegacion')
+            
             break;
           }
           case CodigoApp.ERROR_VALIDACION: {
@@ -476,7 +476,7 @@ export class ActividadEditarComponent implements OnInit {
    * Agrega una nueva tarea(FormGroup) al formulario de actividades
    */
   agregarNuevaTarea(tarea: Tarea = null) {
-    console.log('xx', tarea)
+    
     this.tareas.push(
       this.fb.group({
         id: [tarea ? tarea.id : 0],
@@ -619,7 +619,7 @@ export class ActividadEditarComponent implements OnInit {
           let ttt = this.item.tareas.find(t => t.id == this.tId(k).value);
           if (ttt) {
             this.tRealizada(k).setValue(ttt.realizada);
-            //Activo los campos Realizados pq al marcar CUMPLIDO una actividad
+            //Enable los campos Realizados pq al marcar CUMPLIDO una actividad
             //Se  desativan todos los campos Realizados
             this.tRealizada(k).enable();
           }else{

@@ -14,12 +14,12 @@ import { Errorr } from '../acceso-datos/util/entidades/errorr';
 export class MiActividadAsignadaResolverService implements Resolve<ItemData<Actividad|Errorr>>{
 
   constructor(
-    private categoriaRepo: MisActividadService) { }
+    private actividadesRepo: MisActividadService) { }
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<ItemData<Actividad|Errorr>>|Observable<never> {
       const id = route.paramMap.get('id');
   
-      return this.categoriaRepo.getActividadAsignada(id).pipe(
+      return this.actividadesRepo.getActividadAsignada(id).pipe(
         take(1)
       );
     }

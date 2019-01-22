@@ -62,22 +62,5 @@ export interface ItemData<T> {
         per_page?: number,
         to?: number,
         total: number
-    }
-
-    // "links": {
-    //     "first": "http://riesgos-backend.mii/api/categoria?page=1",
-    //     "last": "http://riesgos-backend.mii/api/categoria?page=12",
-    //     "prev": null,
-    //     "next": "http://riesgos-backend.mii/api/categoria?page=2"
-    // },
-    // "meta": {
-    //     "current_page": 1,
-    //     "from": 1,
-    //     "last_page": 12,
-    //     "path": "http://riesgos-backend.mii/api/categoria",
-    //     "per_page": 10,
-    //     "to": 10,
-    //     "total": 117
-    // }
-    
+    }    
 }

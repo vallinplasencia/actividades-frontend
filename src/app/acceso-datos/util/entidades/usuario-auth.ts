@@ -1,8 +1,3 @@
-import { Categoria } from "../../models/categoria";
-import { Responsable } from "../../models/responsable";
-import { ItemData } from "./item-data";
-import { Activo } from "../../models/activo";
-
 /**
  * Interfaz usada cuando se autentica un usuario.
  * 
